@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B4139252CA8047500B502EB /* TaimoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4139242CA8047500B502EB /* TaimoApp.swift */; };
+		8B4139272CA8047500B502EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4139262CA8047500B502EB /* ContentView.swift */; };
+		8B4139292CA8047500B502EB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4139282CA8047500B502EB /* Item.swift */; };
+		8B41392B2CA8047600B502EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B41392A2CA8047600B502EB /* Assets.xcassets */; };
+		8B41392F2CA8047600B502EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B41392E2CA8047600B502EB /* Preview Assets.xcassets */; };
+		8B4139392CA8047600B502EB /* TaimoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4139382CA8047600B502EB /* TaimoTests.swift */; };
+		8B4139432CA8047600B502EB /* TaimoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4139422CA8047600B502EB /* TaimoUITests.swift */; };
+		8B4139452CA8047600B502EB /* TaimoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4139442CA8047600B502EB /* TaimoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B4139352CA8047600B502EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B4139192CA8047500B502EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4139202CA8047500B502EB;
+			remoteInfo = Taimo;
+		};
+		8B41393F2CA8047600B502EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B4139192CA8047500B502EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4139202CA8047500B502EB;
+			remoteInfo = Taimo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B4139212CA8047500B502EB /* Taimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4139242CA8047500B502EB /* TaimoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaimoApp.swift; sourceTree = "<group>"; };
+		8B4139262CA8047500B502EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8B4139282CA8047500B502EB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8B41392A2CA8047600B502EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B41392C2CA8047600B502EB /* Taimo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Taimo.entitlements; sourceTree = "<group>"; };
+		8B41392E2CA8047600B502EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B4139342CA8047600B502EB /* TaimoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaimoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4139382CA8047600B502EB /* TaimoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaimoTests.swift; sourceTree = "<group>"; };
+		8B41393E2CA8047600B502EB /* TaimoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaimoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4139422CA8047600B502EB /* TaimoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaimoUITests.swift; sourceTree = "<group>"; };
+		8B4139442CA8047600B502EB /* TaimoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaimoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B41391E2CA8047500B502EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4139312CA8047600B502EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B41393B2CA8047600B502EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B4139182CA8047500B502EB = {
+			isa = PBXGroup;
+			children = (
+				8B4139232CA8047500B502EB /* Taimo */,
+				8B4139372CA8047600B502EB /* TaimoTests */,
+				8B4139412CA8047600B502EB /* TaimoUITests */,
+				8B4139222CA8047500B502EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B4139222CA8047500B502EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B4139212CA8047500B502EB /* Taimo.app */,
+				8B4139342CA8047600B502EB /* TaimoTests.xctest */,
+				8B41393E2CA8047600B502EB /* TaimoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B4139232CA8047500B502EB /* Taimo */ = {
+			isa = PBXGroup;
+			children = (
+				8B4139242CA8047500B502EB /* TaimoApp.swift */,
+				8B4139262CA8047500B502EB /* ContentView.swift */,
+				8B4139282CA8047500B502EB /* Item.swift */,
+				8B41392A2CA8047600B502EB /* Assets.xcassets */,
+				8B41392C2CA8047600B502EB /* Taimo.entitlements */,
+				8B41392D2CA8047600B502EB /* Preview Content */,
+			);
+			path = Taimo;
+			sourceTree = "<group>";
+		};
+		8B41392D2CA8047600B502EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8B41392E2CA8047600B502EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B4139372CA8047600B502EB /* TaimoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B4139382CA8047600B502EB /* TaimoTests.swift */,
+			);
+			path = TaimoTests;
+			sourceTree = "<group>";
+		};
+		8B4139412CA8047600B502EB /* TaimoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B4139422CA8047600B502EB /* TaimoUITests.swift */,
+				8B4139442CA8047600B502EB /* TaimoUITestsLaunchTests.swift */,
+			);
+			path = TaimoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B4139202CA8047500B502EB /* Taimo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4139482CA8047600B502EB /* Build configuration list for PBXNativeTarget "Taimo" */;
+			buildPhases = (
+				8B41391D2CA8047500B502EB /* Sources */,
+				8B41391E2CA8047500B502EB /* Frameworks */,
+				8B41391F2CA8047500B502EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taimo;
+			productName = Taimo;
+			productReference = 8B4139212CA8047500B502EB /* Taimo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B4139332CA8047600B502EB /* TaimoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B41394B2CA8047600B502EB /* Build configuration list for PBXNativeTarget "TaimoTests" */;
+			buildPhases = (
+				8B4139302CA8047600B502EB /* Sources */,
+				8B4139312CA8047600B502EB /* Frameworks */,
+				8B4139322CA8047600B502EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B4139362CA8047600B502EB /* PBXTargetDependency */,
+			);
+			name = TaimoTests;
+			productName = TaimoTests;
+			productReference = 8B4139342CA8047600B502EB /* TaimoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B41393D2CA8047600B502EB /* TaimoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B41394E2CA8047600B502EB /* Build configuration list for PBXNativeTarget "TaimoUITests" */;
+			buildPhases = (
+				8B41393A2CA8047600B502EB /* Sources */,
+				8B41393B2CA8047600B502EB /* Frameworks */,
+				8B41393C2CA8047600B502EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B4139402CA8047600B502EB /* PBXTargetDependency */,
+			);
+			name = TaimoUITests;
+			productName = TaimoUITests;
+			productReference = 8B41393E2CA8047600B502EB /* TaimoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B4139192CA8047500B502EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					8B4139202CA8047500B502EB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					8B4139332CA8047600B502EB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8B4139202CA8047500B502EB;
+					};
+					8B41393D2CA8047600B502EB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8B4139202CA8047500B502EB;
+					};
+				};
+			};
+			buildConfigurationList = 8B41391C2CA8047500B502EB /* Build configuration list for PBXProject "Taimo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B4139182CA8047500B502EB;
+			productRefGroup = 8B4139222CA8047500B502EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B4139202CA8047500B502EB /* Taimo */,
+				8B4139332CA8047600B502EB /* TaimoTests */,
+				8B41393D2CA8047600B502EB /* TaimoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B41391F2CA8047500B502EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B41392F2CA8047600B502EB /* Preview Assets.xcassets in Resources */,
+				8B41392B2CA8047600B502EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4139322CA8047600B502EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B41393C2CA8047600B502EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B41391D2CA8047500B502EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4139272CA8047500B502EB /* ContentView.swift in Sources */,
+				8B4139292CA8047500B502EB /* Item.swift in Sources */,
+				8B4139252CA8047500B502EB /* TaimoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4139302CA8047600B502EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4139392CA8047600B502EB /* TaimoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B41393A2CA8047600B502EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4139432CA8047600B502EB /* TaimoUITests.swift in Sources */,
+				8B4139452CA8047600B502EB /* TaimoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B4139362CA8047600B502EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B4139202CA8047500B502EB /* Taimo */;
+			targetProxy = 8B4139352CA8047600B502EB /* PBXContainerItemProxy */;
+		};
+		8B4139402CA8047600B502EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B4139202CA8047500B502EB /* Taimo */;
+			targetProxy = 8B41393F2CA8047600B502EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8B4139462CA8047600B502EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B4139472CA8047600B502EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8B4139492CA8047600B502EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Taimo/Taimo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Taimo/Preview Content\"";
+				DEVELOPMENT_TEAM = 2633WLSDWK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unusynth.Taimo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B41394A2CA8047600B502EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Taimo/Taimo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Taimo/Preview Content\"";
+				DEVELOPMENT_TEAM = 2633WLSDWK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unusynth.Taimo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B41394C2CA8047600B502EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2633WLSDWK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unusynth.TaimoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taimo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Taimo";
+			};
+			name = Debug;
+		};
+		8B41394D2CA8047600B502EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2633WLSDWK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unusynth.TaimoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taimo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Taimo";
+			};
+			name = Release;
+		};
+		8B41394F2CA8047600B502EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2633WLSDWK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unusynth.TaimoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Taimo;
+			};
+			name = Debug;
+		};
+		8B4139502CA8047600B502EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2633WLSDWK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = unusynth.TaimoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Taimo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B41391C2CA8047500B502EB /* Build configuration list for PBXProject "Taimo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4139462CA8047600B502EB /* Debug */,
+				8B4139472CA8047600B502EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B4139482CA8047600B502EB /* Build configuration list for PBXNativeTarget "Taimo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4139492CA8047600B502EB /* Debug */,
+				8B41394A2CA8047600B502EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B41394B2CA8047600B502EB /* Build configuration list for PBXNativeTarget "TaimoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B41394C2CA8047600B502EB /* Debug */,
+				8B41394D2CA8047600B502EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B41394E2CA8047600B502EB /* Build configuration list for PBXNativeTarget "TaimoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B41394F2CA8047600B502EB /* Debug */,
+				8B4139502CA8047600B502EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B4139192CA8047500B502EB /* Project object */;
+}
