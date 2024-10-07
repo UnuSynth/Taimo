@@ -19,6 +19,6 @@ public final class TimerEntity {
 
 extension TimerEntity: Identifiable {
     public var id: ObjectIdentifier {
-        return .init(NSString(string: UUID().uuidString))
+        return .init(self)
     }
 }

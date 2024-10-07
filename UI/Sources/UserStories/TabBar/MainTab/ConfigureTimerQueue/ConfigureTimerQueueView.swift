@@ -13,49 +13,35 @@ struct ConfigureTimerQueueView: View {
     
     var body: some View {
         ScrollViewReader { proxy in
-//            NavigationSplitView {
-            VStack {
-                Button(action: {
-                    if queue.timers.count < 14 {
-                        addItem()
-                    } else {
-                        withAnimation {
-                            proxy.scrollTo(queue.timers.last?.seconds, anchor: .bottom)
-                        }
+            List(queue.timers, id: \.id) { timer in
+                HStack {
+                    Text(String(timer.seconds))
+                        .font(.title)
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(timer.label)
+                            .font(.headline)
+                        Text(timer.color.description.uppercased())
+                            .font(.subheadline)
                     }
-                }) {
-                    Label("Add Item", systemImage: "plus")
                 }
-                
-                List(queue.timers, id: \.seconds) { timer in
-                    LazyHStack {
-                        Text(String(timer.seconds))
-                            .font(.title)
-                            .padding(.horizontal, 8)
-                        Spacer()
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text(timer.label)
-                                .font(.headline)
-                            Text(timer.color.description.uppercased())
-                                .font(.subheadline)
+                .id(timer.id)
+                .listRowBackground(timer.color)
+            }
+            .toolbar {
+                ToolbarItem {
+                    Button(
+                        action: {
+                            addItem()
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                                withAnimation {
+                                    proxy.scrollTo(queue.timers.last?.id, anchor: .bottom)
+                                }
+                            }
                         }
+                    ) {
+                        Label("Add Item", systemImage: "plus")
                     }
-                    .padding(.vertical, 8)
-                    .listRowBackground(timer.color)
                 }
-                //                .toolbar {
-                //                    ToolbarItem {
-                //                        Button(action: {
-                //                            addItem()
-                //                            proxy.scrollTo(queue.timers.last?.seconds, anchor: .bottom)
-                //                        }) {
-                //                            Label("Add Item", systemImage: "plus")
-                //                        }
-                //                    }
-                //                }
-                //            } detail: {
-                //                Text("Taimo")
-                //            }
             }
         }
     }
