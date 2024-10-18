@@ -6,6 +6,7 @@ struct ConfigureTimerView: View {
     @State private var hours: Int = 0
     @State private var minutes: Int = 0
     @State private var seconds: Int = 1
+    @State private var isAlertPresented: Bool = false
     private var totalSeconds: Int = 0
     
     private var columns = [
@@ -15,16 +16,43 @@ struct ConfigureTimerView: View {
     ]
     
     var body: some View {
-        TextField(
-            text: $label,
-            prompt: Text("Enter text")
-        ) {
-            Text("Label:")
+        VStack {
+            Spacer(minLength: 48)
+            
+            TextField(
+                text: $label,
+                prompt: Text("Enter name")
+            ) {
+                Text("Label:")
+            }
+            .frame(height: 32)
+            .padding()
+            
+            MultiComponentPicker(
+                columns: columns,
+                selections: [$hours, $minutes, $seconds]
+            ).padding()
+            
+            Button("Check") {
+                isAlertPresented = true
+            }
+            .alert(
+                setupAlert(),
+                isPresented: $isAlertPresented
+            ) {
+                Button("OK", role: .cancel) {
+                    
+                }
+            }
+
         }
-        
-        MultiComponentPicker(
-            columns: columns,
-            selections: [$hours, $minutes, $seconds]
-        )
     }
+    
+    private func setupAlert() -> String {
+        return "Hours: \(hours.description)\nMinutes: \(minutes.description)\nSeconds: \(seconds.description)"
+    }
+}
+
+#Preview {
+    ConfigureTimerView()
 }

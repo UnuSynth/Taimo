@@ -4,6 +4,7 @@ import Domain
 
 struct ConfigureTimerQueueView: View {
     @State var queue: TimerQueueEntity
+    @State var showingTimerConfig: Bool = false
     
     init(queue: TimerQueueEntity = .init(
         timers: [.init(label: "Ten seconds", seconds: .random(in: 0...100000), color: .indigo)]
@@ -31,15 +32,13 @@ struct ConfigureTimerQueueView: View {
                 ToolbarItem {
                     Button(
                         action: {
-                            addItem()
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                                withAnimation {
-                                    proxy.scrollTo(queue.timers.last?.id, anchor: .bottom)
-                                }
-                            }
+                            showingTimerConfig.toggle()
                         }
                     ) {
                         Label("Add Item", systemImage: "plus")
+                    }.sheet(isPresented: $showingTimerConfig) {
+                        ConfigureTimerView()
+                            .presentationDetents([.medium])
                     }
                 }
             }
